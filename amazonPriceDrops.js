@@ -1,4 +1,4 @@
-function removeItemsWithoutPriceDrops(){
+function removeItemsWithoutPriceDrops() {
   var anyRemoved = false;
   var listItems = document.getElementsByClassName('a-section g-item-sortable');
 
@@ -16,7 +16,7 @@ function removeItemsWithoutPriceDrops(){
   }
 }
 
-function loadAllAndRemoveItemsWithoutPriceDrops(){
+function loadAllAndRemoveItemsWithoutPriceDrops() {
   window.scroll(0, document.body.scrollHeight);
 
   if ((document.body.textContent || document.body.innerText).indexOf('End of List') > -1) {
