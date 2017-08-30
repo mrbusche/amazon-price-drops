@@ -5,9 +5,13 @@ function removeItemsWithoutPriceDrops() {
 
   for (var i = 0; i < listItems.length; i++) {
     var priceDrop = listItems[i].querySelectorAll('.itemPriceDrop');
-    var price = listItems[i].querySelectorAll('.a-color-price')[0].innerHTML;
-    price = price.replace('$', '');
-
+    var price = listItems[i].querySelectorAll('span.a-offscreen');
+  if (price.length) {
+    price = price[0].innerHTML;
+      price = price.replace('$', '');
+    } else {
+    price = 0;
+    }
     if (priceDrop.length == 0 || price > lowPrice) {
       listItems[i].parentElement.removeChild(listItems[i]);
       anyRemoved = true;
