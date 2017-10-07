@@ -5,4 +5,6 @@ Filter an amazon wish list by items with price drops of a certain price or lower
 2. Wait for the sorting progress to stop
 2. Run the JavaScript in amazonPriceDrops.js
 
-If you haven't received the Updated amazon price listings you may want to look at this branch https://github.com/mrbusche/amazonPriceDrops/tree/old-way-before-20170829
+If you haven't received the updated amazon price listings where it sorts by price for you you may want to look at this branch https://github.com/mrbusche/amazonPriceDrops/tree/filter-before-2017-10-08
+
+If you haven't received the updated amazon price listings you may want to look at this branch https://github.com/mrbusche/amazonPriceDrops/tree/old-way-before-20170829
