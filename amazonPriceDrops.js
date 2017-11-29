@@ -1,4 +1,5 @@
 function removeItemsWithoutPriceDrops() {
+  var price = 999999;
   var anyRemoved = false;
   var listItems = document.getElementsByClassName('a-section g-item-sortable');
 
@@ -11,7 +12,7 @@ function removeItemsWithoutPriceDrops() {
     } else {
       price = 0;
     }
-    if (priceDrop.length == 0) {
+    if (priceDrop.length == 0 || price > lowPrice) {
       listItems[i].parentElement.removeChild(listItems[i]);
       anyRemoved = true;
     }
