@@ -1,5 +1,5 @@
 function removeItemsWithoutPriceDrops() {
-  var price = 999999;
+  var lowPrice = 999999;
   var anyRemoved = false;
   var listItems = document.getElementsByClassName('a-section g-item-sortable');
 
