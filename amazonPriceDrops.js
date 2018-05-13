@@ -1,7 +1,7 @@
 function removeItemsWithoutPriceDrops() {
   var lowPrice = 999999;
   var anyRemoved = false;
-  var listItems = document.getElementsByClassName('a-section g-item-sortable');
+  var listItems = document.getElementsByClassName('a-spacing-none g-item-sortable');
 
   for (var i = 0; i < listItems.length; i++) {
     var priceDrop = listItems[i].querySelectorAll('.itemPriceDrop');
