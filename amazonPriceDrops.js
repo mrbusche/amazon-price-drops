@@ -11,7 +11,6 @@ javascript: (function () {
       let price = priceDrop ? listItems[i].querySelectorAll('span.a-offscreen') : 0;
       let priceDropPercent = priceDropSpan.length > 0 ? priceDropSpan[0].innerText : '';
       priceDropPercent = priceDropPercent.replace('Price dropped', '').replace('% since added', '');
-      console.log(parseInt(priceDropPercent));
       if (!priceDrop || price > lowPrice || parseInt(priceDropPercent) < priceDropMin) {
         listItems[i].parentElement.removeChild(listItems[i]);
         anyRemoved = true;
