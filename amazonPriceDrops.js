@@ -3,7 +3,7 @@ javascript: (function () {
     const lowPrice = 999999;
     const priceDropMin = 1;
     let anyRemoved = false;
-    var listItems = document.getElementsByClassName('a-spacing-none g-item-sortable');
+    const listItems = document.getElementsByClassName('a-spacing-none g-item-sortable');
 
     for (var i = 0; i < listItems.length; i++) {
       let priceDropSpan = listItems[i].querySelectorAll('span.a-size-base.a-color-base');
