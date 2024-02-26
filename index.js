@@ -7,7 +7,7 @@ javascript: (function () {
     for (const element of listItems) {
       let priceDrop = element.querySelectorAll('span div div div div div div div div div div div.a-row.itemPriceDrop').length;
       let coupon = element.querySelectorAll('span div div div div div div div div div div div i[id^="coupon-badge"]').length;
-      let dealBadge = element.querySelectorAll('span div div div div div div div div div span.wl-deal-rich-badge').length;
+      let dealBadge = element.querySelectorAll('span div div div div div div div div div div span.wl-deal-rich-badge').length;
       let price = (priceDrop || coupon || dealBadge) ? element.querySelectorAll('span.a-offscreen')[0].innerText.replace('$', '') : 0;
       if (!(priceDrop || coupon || dealBadge) || price > lowPrice) {
         element.parentElement.removeChild(element);
