@@ -1,7 +1,7 @@
 javascript: (function () {
   function removeItemsWithoutPriceDrops() {
     const lowPrice = 999999;
-    const listItems = document.getElementsByClassName("a-list-item");
+    const listItems = document.querySelectorAll('[data-itemid]');
     const listItemsArray = Array.from(listItems);
 
     for (const element of listItemsArray) {
